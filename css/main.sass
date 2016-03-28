@@ -1,0 +1,255 @@
+$menu: #23CC67
+$blanco: #ffffff
+$azul: #1BD7F7
+$oscuro: #112A3B
+$naranja: #f08b1f
+$claro: #D8D8D8
+$amarillo: #F4FA58
+$verde: #58FA58
+
+$ancho: 100%
+$titulo: 72px
+$sub: 20px
+$sub1: 40px
+$abajo: 70px
+$tex: 52px
+$feo: 8px
+$agency:500px
+$compu: 35%
+//mixin
+=colores($naranja)	
+   width: 20%
+   height: 100px
+   float: left 
+   background-color: $naranja
+
+body 
+   background: #1FDA9A
+header
+   background: $menu
+.fondo 
+   width: $ancho
+   height: auto
+   background-size: cover
+   background-position: center
+   background-image: url("../img/carousel-bg.jpg")
+   background-repeat: no-repeat
+   margin-top: 50px
+.titulo 
+   color: $blanco
+   font-size: $titulo
+   margin-top: $abajo
+.sub
+   color: $blanco
+   font-size: $sub
+//hacer mixin para los subtitulos solo cambiar color blanco a gris
+.secdos
+   margin-top: $abajo
+   font-size: $tex
+   color: $blanco
+.linea
+   width: $titulo
+.fondodos
+   width: $ancho
+   height: auto
+   background-color: $oscuro
+   -webkit-box-shadow: 6px 4px 53px 0px rgba(0,0,0,0.75)
+   -moz-box-shadow: 6px 4px 53px 0px rgba(0,0,0,0.75)
+   box-shadow: 6px 4px 53px 0px rgba(0,0,0,0.75)
+   margin-top: $titulo
+.text-width
+   color: $blanco
+   margin-top: $sub
+.chicas
+   height: $feo
+.agency
+   width: $ancho
+   height: $agency
+   margin-top: $sub
+.compu
+   margin-left: $compu
+.button
+   width: $compu 
+   height: $tex
+.sombra
+   -webkit-box-shadow: 0px 2px 58px 19px rgba(29,115,52,1)
+   -moz-box-shadow: 0px 2px 58px 19px rgba(29,115,52,1)
+   box-shadow: 0px 2px 58px 19px rgba(29,115,52,1)
+   margin-top: $abajo
+   padding: $sub
+.cuadro1
+   width: $compu
+   height: $compu
+   margin-left: $compu
+.sombra2
+   -webkit-box-shadow: 0px 4px 41px 7px rgba(240,139,31,1)
+   -moz-box-shadow: 0px 4px 41px 7px rgba(240,139,31,1)
+   box-shadow: 0px 4px 41px 7px rgba(240,139,31,1)
+   margin-top: $abajo
+   padding: $sub
+//seccion de tablas
+.title
+   margin-top: 83px
+.titulo
+   font-size: 32px
+.blanco
+   width: 250px
+   height: auto
+   background-color #ffffff
+   border: 1px solid $menu
+.cua_boton
+   width: 225px
+   height: 60px
+   background-color: $naranja
+   margin-left: 10px
+   margin-top: 10px
+.boton_active
+   width: 280px
+   height: 60px
+   margin-left: 10px
+   margin-top: 10px
+#boton_purchase:hover 
+   cursor: pointer
+   background-color: $menu
+.cua_boton2
+   width: 225px
+   height: 80px
+   margin-left: 24px
+   background-color: #CCD1D1
+.cantidad
+   font-size: 30px
+.text-white
+   color: white
+.pt-5
+   padding-top: 5%
+ol
+   list-style: none  
+.pt--10
+   padding-top: 10%
+
+.margin
+   margin-bottom: 5%
+.linea2
+   width: 200px
+   margin-left: 5px
+.text-gray
+   color: #888
+.boton_chico
+   width: 100px
+   height: 40px
+   background-color:black
+   margin-left: 110px
+.pb-10
+   padding-bottom: 10%
+//formulario
+form
+   width: 400px
+   height: auto
+   background: rgba(0,0,0,0.7)
+   padding: 20px 20px
+   box-sizing:border-box
+   border-radius: 8px
+input, textarea
+   width: 100%
+   margin-bottom: 20px
+   padding: 7px
+   box-sizing:border-box
+   font-size: 17px
+   border: none
+textarea
+   min-width: 100px
+   max-height: 200px
+   max-width: 400px
+
+#boton_enviar
+   background: $naranja
+   color: #ffffff
+   padding: 20px
+   width: 40%
+   margin-left: $compu
+
+#boton_enviar:hover 
+   cursor: pointer
+   //header
+.fondo3
+   width: $ancho
+   height: 400px
+   background-size: cover
+   background-position: center
+   background-image: url("../img/img-divider-img.jpg")
+   background-repeat: no-repeat
+
+.crop 
+   float: left
+   overflow: hidden // importante 
+   position: relative // importante
+   width: 100%
+   height: 250px
+   top: 150px
+.crop img 
+   position: relative
+   top: -150px
+.iconos
+   font-size: 6em
+//maxin
+.muestra
+   width: $ancho
+   height: 100px
+.box
+   +colores($azul) 
+.box2
+   +colores($naranja)
+.box3
+   +colores($claro) 
+.box4
+   +colores($amarillo) 
+.box5
+   +colores($verde) 
+//maxin linea1
+.box6
+   +colores(#E0E0F8) 
+.box7
+   +colores(#A9A9F5)
+.box8
+   +colores(#5858FA) 
+.box9
+   +colores(#0000FF) 
+.box10
+   +colores(#08088A) 
+//maxin linea2
+.box11
+   +colores(#610B4B) 
+.box12
+   +colores(#DF01D7)
+.box13
+   +colores(#FE2EF7) 
+.box14
+   +colores(#F781F3) 
+.box15
+   +colores(#F6CEF5) 
+//maxin linea3
+.box16
+   +colores(#F7819F) 
+.box17
+   +colores(#FE2E64)
+.box18
+   +colores(#FF0040) 
+.box19
+   +colores(#8A0829) 
+.box20
+   +colores(#1C1C1C) 
+//maxin linea4
+.box21
+   +colores(#0B615E) 
+.box22
+   +colores(#088A85)
+.box23
+   +colores(#01DFD7) 
+.box24
+   +colores(#2EFEF7) 
+.box25
+   +colores(#A9F5F2) 
+//maxin linea5
+
+
+
